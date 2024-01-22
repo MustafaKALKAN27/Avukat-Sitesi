@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,400 +10,317 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <title>Restaurant Web Site</title>
-    <link rel="stylesheet" href="style.css">
+    <link
+      rel="shortcut icon"
+      href="images/istanbulson.jpg"
+      type="image/x-icon"
+    />
+    <title>İstanbul Hukuk Bürosu</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!--Kapsayıcı header altında logo,nav ve buttons var-->
     <!--header start-->
     <header class="header">
       <a href="#" class="logo">
-        <img src="images/logo.png" alt="Logo" />
+        <img src="images/istanbulson.jpg" alt="Logo" />
       </a>
       <nav class="navbar">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="product.html">Products</a>
-        <a href="review.html">Review</a>
-        <a href="contact.html">Contact</a>
-        <a href="blogs.html">Blogs</a>
+        <a href="index.html" class="active">Ana Sayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="faaliyet.html">Faaliyet Alanlarımız</a>
+        <a href="iletisim.html">İletişim</a>
       </nav>
       <div class="buttons">
-        <button id="search-btn">
-          <i class="fas fa-search"></i>
+        <button id="phone-btn">
+          <a href="tel://+905070972436" class="tel" title="Avukatı Ara"
+            ><i class="fas fa-phone"></i><span>Hemen Ara</span></a
+          >
         </button>
-        <button id="cart-btn">
-          <i class="fas fa-shopping-cart"></i>
+        <button id="whatsapp-btn">
+          <a
+            href="https://api.whatsapp.com/send?phone=905070972436"
+            class="whats"
+            title="WhatsApp'tan Yaz"
+            ><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a
+          >
         </button>
         <button id="menu-btn">
           <i class="fas fa-bars"></i>
         </button>
-      </div>
-      <div class="search-form">
-        <input type="text" class="search-input" id="search-box" placeholder="serach-here">
-        <i class="fas fa-search"></i>
-      </div>
-      <div class="cart-items-container">
-        <div class="cart-item">
-          <i class="fas fa-times"></i>
-          <img src="images/menu-1.png" alt="menu-1">
-          <div class="content">
-            <h3>cart item 01</h3>
-            <div class="price">$15.99/-</div>
-          </div>
-
-        </div>
-        <div class="cart-item">
-          <i class="fas fa-times"></i>
-          <img src="images/menu-2.png" alt="menu-2">
-          <div class="content">
-            <h3>cart item 02</h3>
-            <div class="price">$15.99/-</div>
-          </div>
-
-        </div>
-        <div class="cart-item">
-          <i class="fas fa-times"></i>
-          <img src="images/menu-3.png" alt="menu-3">
-          <div class="content">
-            <h3>cart item 03</h3>
-            <div class="price">$15.99/-</div>
-          </div>
-
-        </div>
-        <div class="cart-item">
-          <i class="fas fa-times"></i>
-          <img src="images/menu-4.png" alt="menu-4">
-          <div class="content">
-            <h3>cart item 04</h3>
-            <div class="price">$15.99/-</div>
-          </div>
-
-        </div>
-        <a href="#" class="btn">Checkout Now</a>
       </div>
     </header>
     <!--header end-->
     <!--home section start-->
     <section class="home" id="home">
       <div class="content">
-        <h3>EXPRESS HOME DELIVERY</h3>
-        <p>
-          Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Laboriosam
-          Quos Repellendus Aliquam Quam Aperiam Quas?
-        </p>
-        <a href="" class="btn">Order Now</a>
+        <h3>İstanbul Hukuk Bürosu</h3>
+        <div class="paragraf">
+          <p>"İyi olmak kolaydır, zor olan adil olmaktır. <br /></p>
+          <p>En mükemmel adalet ise vicdandır."</p>
+        </div>
       </div>
     </section>
     <!--home section end-->
-    <!--menu section start-->
-    <section class="menu" id="menu">
-      <h1 class="heading">OUR <span>MENU</span></h1>
-      <div class="box-container">
-        <div class="box">
-          <div class="box-head">
-            <img src="images/menu-1.png" alt="menu-1" />
-            <span class="menu-category">Pizza</span>
-            <h3>6 Mini Pizzas</h3>
-            <div class="price">$104.99 <span>119.99</span></div>
-          </div>
-          <div class="box-bottom">
-            <a href="#" class="btn">Add To Cart </a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-head">
-            <img src="images/menu-2.png" alt="menu-1" />
-            <span class="menu-category">Burger</span>
-            <h3>6 Mini Burgers</h3>
-            <div class="price">$99.99 <span>109.99</span></div>
-          </div>
-          <div class="box-bottom">
-            <a href="#" class="btn">Add To Cart </a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-head">
-            <img src="images/menu-3.png" alt="menu-1" />
-            <span class="menu-category">Pizza</span>
-            <h3>2 Mixed Pizzas</h3>
-            <div class="price">$49.99 <span>59.99</span></div>
-          </div>
-          <div class="box-bottom">
-            <a href="#" class="btn">Add To Cart </a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-head">
-            <img src="images/menu-4.png" alt="menu-1" />
-            <span class="menu-category">Burger</span>
-            <h3>3 Meatball Burgers</h3>
-            <div class="price">$79.99 <span>99.99</span></div>
-          </div>
-          <div class="box-bottom">
-            <a href="#" class="btn">Add To Cart </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--menu section end-->
-    <!--products section start-->
-    <section class="products" id="products">
-      <h1 class="heading">OUR <span>PRODUCTS</span></h1>
-      <div class="box-container">
-        <div class="box">
-          <div class="box-head">
-            <span class="title">MINI BURGER</span>
-            <a href="#" class="name">Bacon Burger</a>
-          </div>
-          <div class="image">
-            <img src="images/product-1.png" alt="product1" />
-          </div>
-          <div class="box-bottom">
-            <div class="info">
-              <b class="price">$6.00</b>
-              <span class="amount">110gr / 300 Cal</span>
-            </div>
-            <div class="product-btn">
-              <a href="#">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="box">
-          <div class="box-head">
-            <span class="title">MINI BURGER</span>
-            <a href="#" class="name">Bacon Burger</a>
-          </div>
-          <div class="image">
-            <img src="images/product-2.png" alt="product2" />
-          </div>
-          <div class="box-bottom">
-            <div class="info">
-              <b class="price">$6.00</b>
-              <span class="amount">110gr / 300 Cal</span>
-            </div>
-            <div class="product-btn">
-              <a href="#">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="box dark-bg">
-          <div class="box-head">
-            <span class="title">MINI BURGER</span>
-            <a href="#" class="name">Bacon Burger</a>
-          </div>
-          <div class="image">
-            <img src="images/dark-product.jpg" alt="product3" />
-          </div>
-          <div class="box-bottom">
-            <div class="info">
-              <b class="price">$6.00</b>
-              <span class="amount">110gr / 300 Cal</span>
-            </div>
-            <div class="product-btn">
-              <a href="#">
-                <i class="fas fa-plus"></i>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--products section end-->
     <!--about section start-->
     <section class="about" id="about">
-      <h1 class="heading">ABOUT <span>US</span></h1>
+      <h1 class="heading">Hakkımızda</h1>
       <div class="row">
         <div class="image">
-          <img src="images/about.jpg" alt="about" />
+          <img src="images/istanbulson.jpg" alt="istanbulson" />
         </div>
         <div class="content">
-          <h3>What Is The Secret Recipe Of Our Burgers?</h3>
+          <h3>İstanbul Hukuk Bürosu</h3>
           <p>
-            Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quisquam
-            Voluptatem Facere Amet Temporibus Culpa Sit Illo Earum Cupiditate
-            Soluta Perferendis!
+            İstanbul Hukuk Bürosu 2013 yılında, Avukat Murat CENGİZ tarafından
+            kurulmuştur.
           </p>
           <p>
-            Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quisquam
-            Voluptatem Facere Amet Temporibus Culpa Sit Illo Earum Cupiditate
-            Soluta Perferendis!
+            Büromuz hukuki danışmanlık departmanı, müvekkilimiz olan şirket ve
+            şahıslara her alanda hukuki danışmanlık hizmeti vermekte olup,
+            müvekkil şirket ve şahısların ileride herhangi bir sorunla
+            karşılaşılmasını önlemek amacıyla hukuken alınması gereken tüm
+            tedbirlerin ve yapılması icap eden her türlü işlemlerin uzman
+            avukatlarca önceden yapılmasını sağlamakta ve müvekkillerimize bu
+            bağlamda en profesyonel hukuki desteği vermektedir.
           </p>
           <p>
-            Lorem Ipsum, Dolor Sit Amet Consectetur Adipisicing Elit. Quisquam
-            Voluptatem Facere Amet Temporibus Culpa Sit Illo Earum Cupiditate
-            Soluta Perferendis!
+            "İyi olmak kolaydır, zor olan adil olmaktır. En mükemmel adalet ise
+            vicdandır."
           </p>
-          <a href="#" class="btn">Learn More</a>
         </div>
       </div>
     </section>
     <!--about section end-->
-    <!--review section start-->
-    <section class="review" id="review">
-      <h1 class="heading">CUSTUMER'S <span>REVIEW</span></h1>
+    <!--faaliyet section start-->
+    <section class="faaliyet" id="faaliyet">
+      <h1 class="heading">Faaliyet Alanlarımız</h1>
       <div class="box-container">
         <div class="box">
-          <img src="images/quote.png" alt="quote" />
-          <p>
-            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Autem Nulla
-            Repellendus Similique Porro Explicabo, Blanditiis Voluptatibus
-            Obcaecati Harum Est, Eos Quo Modi Alias. Possimus Odio Quam Ex Earum
-            Ducimus! Officia
-          </p>
-          <img src="images/avatar-1.png" alt="avatar-1" class="user" />
-          <h3>Jennifer Becker</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+          <div class="image" onclick="location.href='aile.html'">
+            <img src="images/aile_hukuku.jpg" alt="aile_hukuku" />
+          </div>
+          <div class="content">
+            <a href="aile.html" class="title">Aile Hukuku</a>
           </div>
         </div>
         <div class="box">
-          <img src="images/quote.png" alt="quote" />
-          <p>
-            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Autem Nulla
-            Repellendus Similique Porro Explicabo, Blanditiis Voluptatibus
-            Obcaecati Harum Est, Eos Quo Modi Alias. Possimus Odio Quam Ex Earum
-            Ducimus! Officia
-          </p>
-          <img src="images/avatar-2.png" alt="avatar-2" class="user" />
-          <h3>John Doe</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+          <div class="image" onclick="location.href='ceza.html'">
+            <img src="images/ceza_hukuku.jpg" alt="ceza_hukuku" />
+          </div>
+          <div class="content">
+            <a href="ceza.html" class="title">Ceza Hukuku</a>
           </div>
         </div>
         <div class="box">
-          <img src="images/quote.png" alt="quote" />
-          <p>
-            Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Autem Nulla
-            Repellendus Similique Porro Explicabo, Blanditiis Voluptatibus
-            Obcaecati Harum Est, Eos Quo Modi Alias. Possimus Odio Quam Ex Earum
-            Ducimus! Officia
-          </p>
-          <img src="images/avatar-3.png" alt="avatar-3" class="user" />
-          <h3>Lisa Arambula</h3>
-          <div class="stars">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star-half-alt"></i>
+          <div class="image" onclick="location.href='fikri.html'">
+            <img src="images/fikri_hukuku.jpg" alt="fikri_hukuku" />
+          </div>
+          <div class="content">
+            <a href="fikri.html" class="title">Fikri Mülkiyet Hukuku</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image" onclick="location.href='danismanlik.html'">
+            <img src="images/danismanlik_hukuku.jpg" alt="danismanlik_hukuku" />
+          </div>
+          <div class="content">
+            <a href="danismanlik.html" class="title">Hukuki Danışmanlık</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image" onclick="location.href='icra.html'">
+            <img src="images/icra_iflas_hukuku.jpg" alt="icra_iflas_hukuku" />
+          </div>
+          <div class="content">
+            <a href="icra.html" class="title">İcra ve İflas Hukuku</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image" onclick="location.href='insaat.html'">
+            <img src="images/insaat_hukuku.jpg" alt="İnşaat Hukuku" />
+          </div>
+          <div class="content">
+            <a href="insaat.html" class="title">İnşaat Hukuku</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image" onclick="location.href='sirketler.html'">
+            <img src="images/sirketler_hukuku.jpg" alt="sirketler_hukuku" />
+          </div>
+          <div class="content">
+            <a href="sirketler.html" class="title">Şirketler Hukuku</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image" onclick="location.href='is.html'">
+            <img src="images/is_hukuku.jpg" alt="is_hukuku" />
+          </div>
+          <div class="content">
+            <a href="is.html" class="title">İş Hukuku</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image" onclick="location.href='miras.html'">
+            <img src="images/miras_hukuku.jpg" alt="miras_hukuku" />
+          </div>
+          <div class="content">
+            <a href="miras.html" class="title">Miras Hukuku</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image" onclick="location.href='tuketici.html'">
+            <img src="images/tuketici_hukuku.jpg" alt="tuketici_hukuku" />
+          </div>
+          <div class="content">
+            <a href="tuketici.html" class="title">Tüketici Hukuku</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image" onclick="location.href='vergi.html'">
+            <img src="images//vergi_hukuku.jpg" alt="vergi_hukuku" />
+          </div>
+          <div class="content">
+            <a href="vergi.html" class="title">Vergi Hukuku</a>
+          </div>
+        </div>
+        <div class="box">
+          <div class="image" onclick="location.href='idare.html'">
+            <img src="images/idare_hukuku.jpg" alt="idare_hukuku" />
+          </div>
+          <div class="content">
+            <a href="idare.html" class="title">İdare Hukuku</a>
           </div>
         </div>
       </div>
     </section>
-    <!--review section end-->
+    <!--faaliyet section end-->
     <!--contact section start-->
     <section class="contact" id="contact">
-      <h1 class="heading">CONTACT <span>US</span></h1>
+      <h1 class="heading">İletişim</h1>
       <div class="row">
         <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.758732653505!2d37.37830221478766!3d37.06323226054963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531e14b7dbbfde1%3A0x40cc8d053a1d7fe5!2zU3VidXJjdSDEsMWfIE1lcmtleg!5e0!3m2!1str!2str!4v1594296241497!5m2!1str!2str"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
           class="map"
-          src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d24075.704371261814!2d28.985092000000005!3d41.037002!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab7650656bd63%3A0x8ca058b28c20b6c3!2zVGFrc2ltIE1leWRhbsSxLCDFnmVoaXQgTXVodGFyLCAzNDQzNSBCZXlvxJ9sdS_EsHN0YW5idWw!5e0!3m2!1str!2str!4v1705168966033!5m2!1str!2str"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
         ></iframe>
-        <form>
-          <h3>GET IN TOUCH</h3>
+        <form
+          name="form1"
+          method="post"
+          action="gonder.php"
+          onsubmit="return checkform(this);"
+        ><i class="fas fa-user"></i>
+          <h3>Bizimle İletişime Geçin</h3>
           <div class="inputBox">
             <i class="fas fa-user"></i>
-            <input type="text" placeholder="name" />
+            <input
+              type="text"
+              name="ad"
+              id="ad"
+              placeholder="Adınız ve Soyadınız"
+            />
+          </div>
+          <div class="inputBox">
+            <i class="fa-solid fa-envelope-open-text"></i>
+            <input
+              type="text"
+              name="konu"
+              id="konu"
+              placeholder="Konu"
+            />
           </div>
           <div class="inputBox">
             <i class="fas fa-envelope"></i>
-            <input type="email" placeholder="mail" />
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E posta Adresiniz"
+            />
           </div>
           <div class="inputBox">
             <i class="fas fa-phone"></i>
-            <input type="number" placeholder="tel" />
+            <input
+              type="number"
+              name="telefon"
+              id="telefon"
+              placeholder="Telefon Numaranız"
+            />
           </div>
-          <input type="submit" class="btn" value="Contact Now" />
+          <div class="inputBox">
+            <i class="fa-solid fa-message"></i>
+            <textarea
+              name="mesaj"
+              cols="40"
+              rows="6"
+              id="mesaj"
+              placeholder="Mesajınız"
+            ></textarea>
+          </div>
+          <input type="submit" class="btn" value="Formu Gönder" />
+          <input type="reset" class="btn" name="Reset" value="Formu Temizle" />
         </form>
       </div>
     </section>
     <!--contact section end-->
-    <!--blog section start-->
-    <section class="blog" id="blog">
-      <h1 class="heading">OUR <span>BLOG</span></h1>
-      <div class="box-container">
-        <div class="box">
-          <div class="image">
-            <img src="images/blog-1.jpg" alt="blog-1" />
-          </div>
-          <div class="content">
-            <a href="#" class="title">How To Make Burgers</a>
-            <span>By Admin / 10st May, 2020</span>
-            <p>
-              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
-              Temporibus, Laudantium!
-            </p>
-            <a href="#" class="btn">Read More</a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="images/blog-2.jpg" alt="blog-2" />
-          </div>
-          <div class="content">
-            <a href="#" class="title">How To Make Burgers</a>
-            <span>By Admin / 10st May, 2020</span>
-            <p>
-              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
-              Temporibus, Laudantium!
-            </p>
-            <a href="#" class="btn">Read More</a>
-          </div>
-        </div>
-        <div class="box">
-          <div class="image">
-            <img src="images/blog-3.jpg" alt="blog-3" />
-          </div>
-          <div class="content">
-            <a href="#" class="title">How To Make Burgers</a>
-            <span>By Admin / 10st May, 2020</span>
-            <p>
-              Lorem Ipsum Dolor Sit Amet Consectetur, Adipisicing Elit.
-              Temporibus, Laudantium!
-            </p>
-            <a href="#" class="btn">Read More</a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!--blogs section end-->
     <!--footer section start-->
     <section class="footer">
-      <div class="search">
-        <input type="text" class="search-input" placeholder="search">
-        <button class="btn btn-primary">Search</button>
+      <div class="footer-content">
+        <div class="content">
+          <h3>İstanbul Hukuk Bürosu</h3>
+          <p>
+            Büromuz hukuki danışmanlık departmanı, müvekkilimiz olan şirket ve
+            şahıslara her alanda hukuki danışmanlık hizmeti vermekte olup,
+            müvekkil şirket ve şahısların ileride herhangi bir sorunla
+            karşılaşılmasını önlemek amacıyla hukuken alınması gereken tüm
+            tedbirlerin ve yapılması icap eden her türlü işlemlerin uzman
+            avukatlarca önceden yapılmasını sağlamakta ve müvekkillerimize bu
+            bağlamda en profesyonel hukuki desteği vermektedir.
+          </p>
+        </div>
+        <div class="content">
+          <h3>İletişim</h3>
+          <div class="iletisim">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+              Çukur Mah. Dr. Mecit Barlas Cad. Suburcu İş Merkezi Kat 4 Daire 16
+              Şahinbey / GAZİANTEP
+            </p>
+          </div>
+          <div class="iletisim">
+            <i class="fa-solid fa-phone"></i>
+            <p>0 342 343 42 00</p>
+          </div>
+          <div class="iletisim">
+            <i class="fa-solid fa-mobile"></i>
+            <p>
+              0 507 097 24 36 <br />
+              0 545 253 27 27
+            </p>
+          </div>
+          <div class="iletisim">
+            <i class="fa-solid fa-envelope"></i>
+            <p>istanbulhukuk.av@gmail.com <br />avukatmuratcengiz@gmail.com</p>
+          </div>
+        </div>
+        <div class="content">
+          <img src="images/terazi.jpg" alt="terazi">
+        </div>
       </div>
-      <div class="share">
-        <a href="#" class="fab fa-facebook"></a>
-        <a href="#" class="fab fa-twitter"></a>
-        <a href="#" class="fab fa-instagram"></a>
-        <a href="#" class="fab fa-linkedin"></a>
-        <a href="#" class="fab fa-pinterest"></a>
+      <div class="footer-menu">
+        <div class="links">
+          <a href="index.html" class="active">Ana Sayfa</a>
+          <a href="hakkimizda.html">Hakkımızda</a>
+          <a href="faaliyet.html">Faaliyet Alanlarımız</a>
+          <a href="iletisim.html">İletişim</a>
+        </div>
+        
       </div>
-      <div class="links">
-        <a href="index.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="menu.html">Menu</a>
-        <a href="product.html">Products</a>
-        <a href="review.html">Review</a>
-        <a href="contact.html">Contact</a>
-        <a href="blogs.html">Blogs</a>
       <div class="created">
         Created By <span>Mustafa KALKAN</span> | All Rights Reserved
       </div>

@@ -1,11 +1,7 @@
 
-const searchForm = document.querySelector(".search-form");
-const cartItem = document.querySelector(".cart-items-container");
 const navbar = document.querySelector(".navbar");
 
 
-const searchBtn = document.querySelector("#search-btn");
-const cartBtn = document.querySelector("#cart-btn");
 const menuBtn = document.querySelector("#menu-btn");
 
 menuBtn.addEventListener("click",function(){
@@ -20,26 +16,33 @@ menuBtn.addEventListener("click",function(){
     });
 })
 
-cartBtn.addEventListener("click",function(){
-    cartItem.classList.toggle("active");
-    document.addEventListener("click", function (e){
-        if (!e.composedPath().includes(cartBtn)
-         && !e.composedPath().includes(cartItem)
-        ){
-            cartItem.classList.remove("active");
-        }
 
-    });
-})
 
-searchBtn.addEventListener("click",function(){
-    searchForm.classList.toggle("active");
-    document.addEventListener("click", function (e){
-        if (!e.composedPath().includes(searchBtn)
-         && !e.composedPath().includes(searchForm)
-        ){
-            searchForm.classList.remove("active");
-        }
-
-    });
-})
+function checkform(form1)
+{
+  if (form1.ad.value == "")  {
+    alert("Lütfen Adınızı giriniz !");
+    form1.ad.focus();
+	return (false); }
+  if (form1.ad.value.length < 5 )  {
+    alert("Lütfen Adınızı tam giriniz !");
+    form1.ad.focus();
+	return (false); }
+  if (form1.mail.value == "")  {
+    alert("Lütfen mail adresinizi giriniz !");
+    form1.mail.focus();
+	return (false); }
+  if (form1.telefon.value == "")  {
+    alert("Lütfen telefon belirtiniz !");
+    form1.telefon.focus();
+	return (false); }
+  if (form1.mesaj.value == "")  {
+    alert("Lütfen bir mesaj giriniz !");
+    form1.mesaj.focus();
+	return (false); }
+  if (form1.mesaj.value.length < 15 )  {
+    alert("Lüten derdinizi anlatabilecek bir cümle giriniz !");
+    form1.mesaj.focus();
+	return (false); }
+	
+}

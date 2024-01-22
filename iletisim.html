@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="shortcut icon"
+      href="images/istanbulson.jpg"
+      type="image/x-icon"
+    />
+    <title>İstanbul Hukuk Bürosu</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--Kapsayıcı header altında logo,nav ve buttons var-->
+    <!--header start-->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/istanbulson.jpg" alt="Logo" />
+      </a>
+      <nav class="navbar">
+        <a href="index.html">Ana Sayfa</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="faaliyet.html">Faaliyet Alanlarımız</a>
+        <a href="iletisim.html" class="active">İletişim</a>
+      </nav>
+      <div class="buttons">
+        <button id="phone-btn">
+          <a href="tel://+905070972436" class="tel" title="Avukatı Ara"
+            ><i class="fas fa-phone"></i><span>Hemen Ara</span></a
+          >
+        </button>
+        <button id="whatsapp-btn">
+          <a
+            href="https://api.whatsapp.com/send?phone=905070972436"
+            class="whats"
+            title="WhatsApp'tan Yaz"
+            ><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a
+          >
+        </button>
+        <button id="menu-btn">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </header>
+    <!--header end-->
+    <!--contact section start-->
+    <section class="contact" id="contact">
+      <h1 class="heading">İletişim</h1>
+      <div class="row">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3183.758732653505!2d37.37830221478766!3d37.06323226054963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1531e14b7dbbfde1%3A0x40cc8d053a1d7fe5!2zU3VidXJjdSDEsMWfIE1lcmtleg!5e0!3m2!1str!2str!4v1594296241497!5m2!1str!2str"
+          style="border: 0"
+          allowfullscreen=""
+          aria-hidden="false"
+          tabindex="0"
+          class="map"
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+        <form
+          name="form1"
+          method="post"
+          action="gonder.php"
+          onsubmit="return checkform(this);"
+        ><i class="fas fa-user"></i>
+          <h3>Bizimle İletişime Geçin</h3>
+          <div class="inputBox">
+            <i class="fas fa-user"></i>
+            <input
+              type="text"
+              name="ad"
+              id="ad"
+              placeholder="Adınız ve Soyadınız"
+            />
+          </div>
+          <div class="inputBox">
+            <i class="fas fa-envelope"></i>
+            <input
+              type="email"
+              name="mail"
+              id="mail"
+              placeholder="E posta Adresiniz"
+            />
+          </div>
+          <div class="inputBox">
+            <i class="fas fa-phone"></i>
+            <input
+              type="number"
+              name="telefon"
+              id="telefon"
+              placeholder="Telefon Numaranız"
+            />
+          </div>
+          <div class="inputBox">
+            <i class="fa-solid fa-message"></i>
+            <textarea
+              name="mesaj"
+              cols="40"
+              rows="6"
+              id="mesaj"
+              placeholder="Mesajınız"
+            ></textarea>
+          </div>
+          <input type="submit" class="btn" value="Formu Gönder" />
+          <input type="reset" class="btn" name="Reset" value="Formu Temizle" />
+        </form>
+      </div>
+    </section>
+    <!--contact section end-->
+    <!--footer section start-->
+    <section class="footer">
+      <div class="footer-content">
+        <div class="content">
+          <h3>İstanbul Hukuk Bürosu</h3>
+          <p>
+            Büromuz hukuki danışmanlık departmanı, müvekkilimiz olan şirket ve
+            şahıslara her alanda hukuki danışmanlık hizmeti vermekte olup,
+            müvekkil şirket ve şahısların ileride herhangi bir sorunla
+            karşılaşılmasını önlemek amacıyla hukuken alınması gereken tüm
+            tedbirlerin ve yapılması icap eden her türlü işlemlerin uzman
+            avukatlarca önceden yapılmasını sağlamakta ve müvekkillerimize bu
+            bağlamda en profesyonel hukuki desteği vermektedir.
+          </p>
+        </div>
+        <div class="content">
+          <h3>İletişim</h3>
+          <div class="iletisim">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>
+              Çukur Mah. Dr. Mecit Barlas Cad. Suburcu İş Merkezi Kat 4 Daire 16
+              Şahinbey / GAZİANTEP
+            </p>
+          </div>
+          <div class="iletisim">
+            <i class="fa-solid fa-phone"></i>
+            <p>0 342 343 42 00</p>
+          </div>
+          <div class="iletisim">
+            <i class="fa-solid fa-mobile"></i>
+            <p>
+              0 507 097 24 36 <br />
+              0 545 253 27 27
+            </p>
+          </div>
+          <div class="iletisim">
+            <i class="fa-solid fa-envelope"></i>
+            <p>istanbulhukuk.av@gmail.com <br />avukatmuratcengiz@gmail.com</p>
+          </div>
+        </div>
+        <div class="content">
+          <img src="images/terazi.jpg" alt="terazi">
+        </div>
+      </div>
+      <div class="footer-menu">
+        <div class="links">
+          <a href="index.html">Ana Sayfa</a>
+          <a href="hakkimizda.html">Hakkımızda</a>
+          <a href="faaliyet.html">Faaliyet Alanlarımız</a>
+          <a href="iletisim.html"  class="active">İletişim</a>
+        </div>
+        
+      </div>
+      <div class="created">
+        Created By <span>Mustafa KALKAN</span> | All Rights Reserved
+      </div>
+    </section>
+    <!--footer section end-->
+    <script src="js/script.js"></script>
+  </body>
+</html>
